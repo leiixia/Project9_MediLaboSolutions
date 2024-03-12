@@ -6,16 +6,16 @@ Architecture en microservice, au nombre de cinq microservices indépents.
 # Prérequis. 
 
 ## Avant de débuter, s'assurer que tous les logiciels suivants sont installés sur la machine : 
-  -- Docker. 
+  -- Docker. //
   -- Le projet. 
 
 # Configuration des ports. 
 ## Ports utilisés : 
-  9010 : project9.
-  9011 : gateway 
-  8888 : patientMService 
-  9003 : NotesMServices
-  9002 : AssessmentMService
+  9010 : project9 //
+  9011 : gateway  //
+  8888 : patientMService  //
+  9003 : NotesMServices //
+  9002 : AssessmentMService  //
   27017 : mongodb
 
 # Connexion à l'application. 
@@ -23,7 +23,7 @@ Architecture en microservice, au nombre de cinq microservices indépents.
     docker-compose up
 
   ## Identifiants de connexion :
-  username 
+  username  //
   password
 
 # Recommandation pour l'utilisation du Green Code. 
