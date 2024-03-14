@@ -3,15 +3,19 @@
     WORKDIR /Project9
 
 
-    COPY .mvn/ .mvn
+    COPY .mvn ./.mvn
     COPY  pom.xml ./
+    COPY mvnw ./mvnw
     COPY src ./src
 
 
-    ENV security.in.memory.username=username \
-        security.in.memory.password=password
+    ENV security.username=username \
+        security.password=password
+
+    RUN ./mvnw dependency:resolve
 
     EXPOSE 9010
 
-    CMD ["spring-boot:run"]
+    CMD ["./mvnw", "spring-boot:run"]
+
 

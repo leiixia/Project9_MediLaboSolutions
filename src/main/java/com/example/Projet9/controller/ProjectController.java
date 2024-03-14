@@ -100,18 +100,6 @@ public class ProjectController {
         return "add-new-patient";
     }
 
- /*   @GetMapping("/note/save")
-    public String saveNote(@ModelAttribute("noteToSave") Note note){
-       if(note.getId().isEmpty()){
-            note.setId(null);
-            noteProxy.createNote(note);
-       } else {
-            noteProxy.updateNote(note);
-        }
-        return "redirect:/patient?patientId=" + note.getPatient_Id();
-    } */
-
-
     @GetMapping("/patient/delete/{id}")
     public String deletePatient(@PathVariable("id") int id, Model model){
         patientProxy.deletePatient(id);

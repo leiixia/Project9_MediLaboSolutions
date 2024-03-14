@@ -2,7 +2,7 @@ package com.example.Projet9.proxies;
 
 import com.example.Projet9.domain.Assessment;
 import com.example.Projet9.domain.Patient;
-import domain.Note;
+import com.example.Projet9.domain.Note;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

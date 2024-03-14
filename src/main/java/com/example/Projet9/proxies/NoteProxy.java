@@ -2,7 +2,6 @@ package com.example.Projet9.proxies;
 
 
 import com.example.Projet9.domain.Note;
-import dto.NotesDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,7 +12,7 @@ import java.util.List;
 public interface NoteProxy {
 
     @GetMapping(value = "/note/patient/{id}")
-    List<NotesDto> getNoteByPatientId(@PathVariable("id") int Patient_id);
+    List<Note> getNoteByPatientId(@PathVariable("id") int Patient_id);
 
     @GetMapping(value = "/note/{id}")
     Note getNoteById(@PathVariable("id") String id);
